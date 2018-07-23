@@ -7,3 +7,4 @@ import { Component } from '@angular/core';
 <mat-checkbox>Test</mat-checkbox>`,
 })
 export class AppComponent  { name = 'Angular'; }
+ 
