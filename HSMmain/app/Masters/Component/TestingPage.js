@@ -7,17 +7,15 @@ var __decorate = (this && this.__decorate) || function (decorators, target, key,
 };
 Object.defineProperty(exports, "__esModule", { value: true });
 var core_1 = require("@angular/core");
-var AppComponent = /** @class */ (function () {
-    function AppComponent() {
-        this.name = 'Angular';
+var TestingClass = /** @class */ (function () {
+    function TestingClass() {
     }
-    AppComponent = __decorate([
+    TestingClass = __decorate([
         core_1.Component({
-            selector: 'my-app',
-            template: "<h1>Hello {{name}}</h1> \n\n<mat-checkbox>Test</mat-checkbox>\n\n<h2>\n    Welcome to Home Page\n</h2>\n \n//<nav>\n//      <a routerLink=\"/demo\" routerLinkActive=\"active\">Go to Calc</a>\n//</nav>\n\n<mat-form-field>\n                <input matInput placeholder=\"Test\" />\n            </mat-form-field>\n           \n        <mat-checkbox>Check me!</mat-checkbox>\n\n",
+            template: "<h1>Hello this</h1>"
         })
-    ], AppComponent);
-    return AppComponent;
+    ], TestingClass);
+    return TestingClass;
 }());
-exports.AppComponent = AppComponent;
-//# sourceMappingURL=app.component.js.map
+exports.TestingClass = TestingClass;
+//# sourceMappingURL=TestingPage.js.map

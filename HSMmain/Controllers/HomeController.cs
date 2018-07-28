@@ -10,7 +10,7 @@ namespace HSMmain.Controllers
     {
         public ActionResult Index()
         {
-            return View();
+            return View("~/Views/Masters/Testing.cshtml");
         }
 
         public ActionResult About()

@@ -9,9 +9,9 @@ namespace HSMmain.Controllers.Masters
     public class TestingController : Controller
     {
         // GET: Testing
-        public ActionResult Index()
+        public ActionResult Test()
         {
-            return View();
+            return View("~/Views/Masters/Testing.cshtml");
         }
     }
 }
