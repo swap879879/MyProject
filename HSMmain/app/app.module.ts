@@ -1,9 +1,9 @@
-import { NgModule }      from '@angular/core';
+import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 import { BrowserAnimationsModule, NoopAnimationsModule } from '@angular/platform-browser/animations';
-import { Form } from '@angular/forms';
+import { Form, FormsModule } from '@angular/forms';
 import {
-    MatAutocompleteModule,
+    MatAutocompleteModule, 
     MatButtonModule,
     MatButtonToggleModule,
     MatCardModule,
@@ -36,16 +36,14 @@ import {
     MatToolbarModule,
     MatTooltipModule } from '@angular/material';
 import { APP_BASE_HREF } from '@angular/common';
-
 import { AppComponent } from './app.component';
-import { TestingClass } from './Masters/Component/TestingPage'
-
 import { RouterModule } from '@angular/router'
-import { ROUTING } from './app'
+import { appRouting } from './app-routing.module'
+import '../node_modules/hammerjs/hammer.js'
 
 
 @NgModule({
-    imports: [BrowserModule, BrowserAnimationsModule, NoopAnimationsModule, MatAutocompleteModule,
+    imports: [appRouting,BrowserModule, BrowserAnimationsModule, NoopAnimationsModule, MatAutocompleteModule, FormsModule, 
         MatButtonModule,
         MatButtonToggleModule,
         MatCardModule,
@@ -76,8 +74,8 @@ import { ROUTING } from './app'
         MatTableModule,
         MatTabsModule,
         MatToolbarModule,
-        MatTooltipModule, ROUTING],
-    declarations: [AppComponent, TestingClass ],
+        MatTooltipModule],
+    declarations: [AppComponent ],
     bootstrap: [AppComponent],
     providers: [{ provide: APP_BASE_HREF, useValue: '/' }]
 })

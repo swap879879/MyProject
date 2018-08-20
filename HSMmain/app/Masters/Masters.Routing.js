@@ -7,15 +7,21 @@ var __decorate = (this && this.__decorate) || function (decorators, target, key,
 };
 Object.defineProperty(exports, "__esModule", { value: true });
 var core_1 = require("@angular/core");
-var TestingClass = /** @class */ (function () {
-    function TestingClass() {
+var router_1 = require("@angular/router");
+var Test_Component_1 = require("./Test/Test.Component");
+var MasterRoutes = [
+    { path: 'test', component: Test_Component_1.TestComponent }
+];
+var MasterRouting = /** @class */ (function () {
+    function MasterRouting() {
     }
-    TestingClass = __decorate([
-        core_1.Component({
-            template: "<h1>Hello this</h1>"
+    MasterRouting = __decorate([
+        core_1.NgModule({
+            imports: [router_1.RouterModule.forChild(MasterRoutes)],
+            exports: [router_1.RouterModule]
         })
-    ], TestingClass);
-    return TestingClass;
+    ], MasterRouting);
+    return MasterRouting;
 }());
-exports.TestingClass = TestingClass;
-//# sourceMappingURL=TestingPage.js.map
+exports.MasterRouting = MasterRouting;
+//# sourceMappingURL=Masters.Routing.js.map

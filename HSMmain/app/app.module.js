@@ -9,17 +9,18 @@ Object.defineProperty(exports, "__esModule", { value: true });
 var core_1 = require("@angular/core");
 var platform_browser_1 = require("@angular/platform-browser");
 var animations_1 = require("@angular/platform-browser/animations");
+var forms_1 = require("@angular/forms");
 var material_1 = require("@angular/material");
 var common_1 = require("@angular/common");
 var app_component_1 = require("./app.component");
-var TestingPage_1 = require("./Masters/Component/TestingPage");
-var app_1 = require("./app");
+var app_routing_module_1 = require("./app-routing.module");
+require("../node_modules/hammerjs/hammer.js");
 var AppModule = /** @class */ (function () {
     function AppModule() {
     }
     AppModule = __decorate([
         core_1.NgModule({
-            imports: [platform_browser_1.BrowserModule, animations_1.BrowserAnimationsModule, animations_1.NoopAnimationsModule, material_1.MatAutocompleteModule,
+            imports: [app_routing_module_1.appRouting, platform_browser_1.BrowserModule, animations_1.BrowserAnimationsModule, animations_1.NoopAnimationsModule, material_1.MatAutocompleteModule, forms_1.FormsModule,
                 material_1.MatButtonModule,
                 material_1.MatButtonToggleModule,
                 material_1.MatCardModule,
@@ -50,8 +51,8 @@ var AppModule = /** @class */ (function () {
                 material_1.MatTableModule,
                 material_1.MatTabsModule,
                 material_1.MatToolbarModule,
-                material_1.MatTooltipModule, app_1.ROUTING],
-            declarations: [app_component_1.AppComponent, TestingPage_1.TestingClass],
+                material_1.MatTooltipModule],
+            declarations: [app_component_1.AppComponent],
             bootstrap: [app_component_1.AppComponent],
             providers: [{ provide: common_1.APP_BASE_HREF, useValue: '/' }]
         })

@@ -6,12 +6,12 @@ using System.Web.Mvc;
 
 namespace HSMmain.Controllers.Masters
 {
-    public class TestingController : Controller
+    public class TestController : Controller
     {
-        // GET: Testing
+        // GET: Test
         public ActionResult Test()
         {
-            return View("~/Views/Masters/Testing.cshtml");
+            return View();
         }
     }
 }

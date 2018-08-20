@@ -55,6 +55,7 @@
       'rxjs': 'npm:rxjs',
       'tslib': 'npm:tslib/tslib.js',
       'rxjs/operators': 'npm:rxjs/operators/',
+      'hammerjs': 'npm:hammerjs/hammer.js',
       
       'angular-in-memory-web-api': 'npm:angular-in-memory-web-api/bundles/in-memory-web-api.umd.js'
     },

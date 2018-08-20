@@ -7,17 +7,21 @@ var __decorate = (this && this.__decorate) || function (decorators, target, key,
 };
 Object.defineProperty(exports, "__esModule", { value: true });
 var core_1 = require("@angular/core");
-var AppComponent = /** @class */ (function () {
-    function AppComponent() {
-        this.name = 'Angular';
+var forms_1 = require("@angular/forms");
+var common_1 = require("@angular/common");
+var Masters_Component_1 = require("./Masters.Component");
+var Test_Component_1 = require("./Test/Test.Component");
+var MasterModule = /** @class */ (function () {
+    function MasterModule() {
     }
-    AppComponent = __decorate([
-        core_1.Component({
-            selector: 'my-app',
-            template: "\n  <div>\n      <ul>\n         <li><a [routerLink]=\"['/demo']\">contact</a></li>\n         <li><a [routerLink]=\"['/masters']\">masters</a></li>\n     </ul>\n    <router-outlet></router-outlet>\n  </div>"
+    MasterModule = __decorate([
+        core_1.NgModule({
+            imports: [forms_1.FormsModule, common_1.CommonModule],
+            declarations: [Masters_Component_1.MasterComponent, Test_Component_1.TestComponent],
+            bootstrap: [Masters_Component_1.MasterComponent],
         })
-    ], AppComponent);
-    return AppComponent;
+    ], MasterModule);
+    return MasterModule;
 }());
-exports.AppComponent = AppComponent;
-//# sourceMappingURL=app.component.js.map
+exports.MasterModule = MasterModule;
+//# sourceMappingURL=Masters.Module.js.map
