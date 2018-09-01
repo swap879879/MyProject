@@ -171,8 +171,9 @@
     <Compile Include="App_Start\Startup.Auth.cs" />
     <Compile Include="Controllers\AccountController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
+    <Compile Include="Controllers\MainController.cs" />
     <Compile Include="Controllers\ManageController.cs" />
-    <Compile Include="Controllers\Masters\TestController.cs" />
+    <Compile Include="Controllers\Masters\MastersController.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
@@ -183,10 +184,13 @@
     <Compile Include="Startup.cs" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="app\HomePage.html" />
+    <Content Include="app\Masters\SocietyMaster\SocietyMaster.html" />
     <Content Include="Content\bootstrap-grid.css" />
     <Content Include="Content\bootstrap-grid.min.css" />
     <Content Include="Content\bootstrap-reboot.css" />
     <Content Include="Content\bootstrap-reboot.min.css" />
+    <Content Include="Content\Back\bootstrap.css" />
     <Content Include="Content\bootstrap.css" />
     <Content Include="Content\bootstrap.min.css" />
     <Content Include="Content\deeppurple-amber.css" />
@@ -204,8 +208,9 @@
     <Content Include="Content\bootstrap-grid.min.css.map" />
     <Content Include="Content\bootstrap-reboot.css.map" />
     <Content Include="Content\bootstrap-reboot.min.css.map" />
-    <Content Include="Content\bootstrap.css.map" />
+    <Content Include="Content\Back\bootstrap.css.map" />
     <Content Include="Content\bootstrap.min.css.map" />
+    <Content Include="app\Masters\Master.Component.html" />
     <None Include="Properties\PublishProfiles\NEw.pubxml" />
     <None Include="Properties\PublishProfiles\Publish.pubxml" />
     <None Include="Scripts\jquery-1.10.2.intellisense.js" />
@@ -253,12 +258,12 @@
     <Content Include="Views\Manage\VerifyPhoneNumber.cshtml" />
     <Content Include="Views\Shared\Lockout.cshtml" />
     <Content Include="Views\Shared\_LoginPartial.cshtml" />
-    <Content Include="tsconfig.json" />
+    <Content Include="app\tsconfig.json" />
     <Content Include="tslint.json" />
-    <Content Include="Views\Masters\Test.cshtml" />
-    <Content Include="Views\Test\Test.cshtml" />
-    <Content Include="Views\Shared\_Layout.cshtml" />
     <Content Include="Views\_ViewStart.cshtml" />
+    <Content Include="Views\Shared\_Layout.cshtml" />
+    <Content Include="Views\Home\About.cshtml" />
+    <Content Include="Views\Masters\Main.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
@@ -279,7 +284,9 @@
     <TypeScriptCompile Include="app\Masters\Masters.Component.ts" />
     <TypeScriptCompile Include="app\Masters\Masters.Module.ts" />
     <TypeScriptCompile Include="app\Masters\Masters.Routing.ts" />
-    <TypeScriptCompile Include="app\Masters\Test\Test.Component.ts" />
+    <TypeScriptCompile Include="app\Masters\SocietyMaster\SocietyMaster.component.ts" />
+    <TypeScriptCompile Include="app\Masters\SocietyMaster\SocietyMaster.Model.ts" />
+    <TypeScriptCompile Include="app\Masters\SocietyMaster\SocietyMaster.Service.ts" />
   </ItemGroup>
   <ItemGroup>
     <Service Include="{4A0DDDB5-7A95-4FBF-97CC-616D07737A77}" />

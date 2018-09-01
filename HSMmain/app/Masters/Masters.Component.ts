@@ -2,13 +2,8 @@
 
 @Component({
     selector: 'test-app',
-    template: `
-  <div>
-      <ul>
-         <li><a [routerLink]="['/test']">Test</a></li>
-     </ul>
-    <router-outlet></router-outlet>
-  </div>`
+    templateUrl:"app/Masters/Master.Component.html"
+
 })
 
 export class MasterComponent{ }

@@ -69,17 +69,22 @@
           }
         }
       },
+      app: {
+          //  main: './main',
+          main: 'main.js', defaultExtension: 'js'        
+      },
       rxjs: {         
-          main: 'index.js',
+             main: 'index.js',
             defaultExtension: 'js'
       },
       'rxjs/operators': {         
           main: 'index.js',
           defaultExtension: 'js',
+  },
+      'angular-in-memory-web-api': {
+      main: './index.js',
+      defaultExtension: 'js'
   }
-      //rxjs: {
-      //  defaultExtension: 'js'
-      //}
     }
   });
 })(this);

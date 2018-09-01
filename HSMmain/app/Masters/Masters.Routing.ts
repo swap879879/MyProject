@@ -1,11 +1,11 @@
 ﻿import { NgModule } from "@angular/core"
 import { RouterModule, Routes } from "@angular/router";
 import { ModuleWithProviders } from "@angular/core/src/metadata/ng_module";
-import { MasterComponent  } from "./Masters.Component"
-import { TestComponent } from "./Test/Test.Component"
+import { MasterComponent } from "./Masters.Component";
+import { SocietyMasterComponent } from "./SocietyMaster/SocietyMaster.component"
 
 const MasterRoutes: Routes = [
-    { path: 'test', component: TestComponent }   
+    { path: 'SocietyMaster', component: SocietyMasterComponent }   
 
 ];
 

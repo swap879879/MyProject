@@ -13,7 +13,7 @@ var MasterComponent = /** @class */ (function () {
     MasterComponent = __decorate([
         core_1.Component({
             selector: 'test-app',
-            template: "\n  <div>\n      <ul>\n         <li><a [routerLink]=\"['/test']\">Test</a></li>\n     </ul>\n    <router-outlet></router-outlet>\n  </div>"
+            templateUrl: "app/Masters/Master.Component.html"
         })
     ], MasterComponent);
     return MasterComponent;

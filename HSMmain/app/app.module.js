@@ -10,49 +10,54 @@ var core_1 = require("@angular/core");
 var platform_browser_1 = require("@angular/platform-browser");
 var animations_1 = require("@angular/platform-browser/animations");
 var forms_1 = require("@angular/forms");
-var material_1 = require("@angular/material");
+var Masters_Component_1 = require("./Masters/Masters.Component");
+//import {
+//    MatAutocompleteModule, 
+//    MatButtonModule,
+//    MatButtonToggleModule,
+//    MatCardModule,
+//    MatCheckboxModule,
+//    MatChipsModule,
+//    MatDatepickerModule,
+//    MatDialogModule,
+//    MatDividerModule,
+//    MatExpansionModule,
+//    MatGridListModule,
+//    MatIconModule,
+//    MatInputModule,
+//    MatListModule,
+//    MatMenuModule,
+//    MatNativeDateModule,
+//    MatPaginatorModule,
+//    MatProgressBarModule,
+//    MatProgressSpinnerModule,
+//    MatRadioModule,
+//    MatRippleModule,
+//    MatSelectModule,
+//    MatSidenavModule,
+//    MatSliderModule,
+//    MatSlideToggleModule,
+//    MatSnackBarModule,
+//    MatSortModule,
+//    MatStepperModule,
+//    MatTableModule,
+//    MatTabsModule,
+//    MatToolbarModule,
+//    MatTooltipModule } from '@angular/material';
 var common_1 = require("@angular/common");
 var app_component_1 = require("./app.component");
 var app_routing_module_1 = require("./app-routing.module");
+var Masters_Module_1 = require("./Masters/Masters.Module");
 require("../node_modules/hammerjs/hammer.js");
 var AppModule = /** @class */ (function () {
     function AppModule() {
     }
     AppModule = __decorate([
         core_1.NgModule({
-            imports: [app_routing_module_1.appRouting, platform_browser_1.BrowserModule, animations_1.BrowserAnimationsModule, animations_1.NoopAnimationsModule, material_1.MatAutocompleteModule, forms_1.FormsModule,
-                material_1.MatButtonModule,
-                material_1.MatButtonToggleModule,
-                material_1.MatCardModule,
-                material_1.MatCheckboxModule,
-                material_1.MatChipsModule,
-                material_1.MatDatepickerModule,
-                material_1.MatDialogModule,
-                material_1.MatDividerModule,
-                material_1.MatExpansionModule,
-                material_1.MatGridListModule,
-                material_1.MatIconModule,
-                material_1.MatInputModule,
-                material_1.MatListModule,
-                material_1.MatMenuModule,
-                material_1.MatNativeDateModule,
-                material_1.MatPaginatorModule,
-                material_1.MatProgressBarModule,
-                material_1.MatProgressSpinnerModule,
-                material_1.MatRadioModule,
-                material_1.MatRippleModule,
-                material_1.MatSelectModule,
-                material_1.MatSidenavModule,
-                material_1.MatSliderModule,
-                material_1.MatSlideToggleModule,
-                material_1.MatSnackBarModule,
-                material_1.MatSortModule,
-                material_1.MatStepperModule,
-                material_1.MatTableModule,
-                material_1.MatTabsModule,
-                material_1.MatToolbarModule,
-                material_1.MatTooltipModule],
-            declarations: [app_component_1.AppComponent],
+            imports: [Masters_Module_1.MasterModule, app_routing_module_1.appRouting, platform_browser_1.BrowserModule, animations_1.BrowserAnimationsModule, animations_1.NoopAnimationsModule, forms_1.FormsModule,
+            ],
+            declarations: [app_component_1.AppComponent, Masters_Component_1.MasterComponent],
+            exports: [Masters_Component_1.MasterComponent],
             bootstrap: [app_component_1.AppComponent],
             providers: [{ provide: common_1.APP_BASE_HREF, useValue: '/' }]
         })

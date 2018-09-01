@@ -8,10 +8,9 @@ var __decorate = (this && this.__decorate) || function (decorators, target, key,
 Object.defineProperty(exports, "__esModule", { value: true });
 var core_1 = require("@angular/core");
 var router_1 = require("@angular/router");
-var app_component_1 = require("./app.component");
+var Masters_Component_1 = require("./Masters/Masters.Component");
 var AppRoutes = [
-    { path: 'demo', component: app_component_1.AppComponent },
-    { path: 'masters', loadChildren: "./Masters/Masters.Module#MastersModule" }
+    { path: 'Masters', component: Masters_Component_1.MasterComponent }
 ];
 var appRouting = /** @class */ (function () {
     function appRouting() {

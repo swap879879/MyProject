@@ -6,10 +6,10 @@ using System.Web.Mvc;
 
 namespace HSMmain.Controllers.Masters
 {
-    public class TestController : Controller
+    public class MastersController : Controller
     {
-        // GET: Test
-        public ActionResult Test()
+        // GET: Masters
+        public ActionResult Main()
         {
             return View();
         }

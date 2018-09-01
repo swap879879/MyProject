@@ -7,15 +7,16 @@ var __decorate = (this && this.__decorate) || function (decorators, target, key,
 };
 Object.defineProperty(exports, "__esModule", { value: true });
 var core_1 = require("@angular/core");
-var TestComponent = /** @class */ (function () {
-    function TestComponent() {
+var SocietyMasterComponent = /** @class */ (function () {
+    function SocietyMasterComponent() {
     }
-    TestComponent = __decorate([
+    SocietyMasterComponent = __decorate([
         core_1.Component({
-            template: "<h1>Test</h1>"
+            selector: 'Society-Master',
+            templateUrl: "app/Masters/SocietyMaster/SocietyMaster.html"
         })
-    ], TestComponent);
-    return TestComponent;
+    ], SocietyMasterComponent);
+    return SocietyMasterComponent;
 }());
-exports.TestComponent = TestComponent;
-//# sourceMappingURL=Test.Component.js.map
+exports.SocietyMasterComponent = SocietyMasterComponent;
+//# sourceMappingURL=SocietyMaster.component.js.map
