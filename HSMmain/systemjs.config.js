@@ -28,7 +28,7 @@
       '@angular/forms': 'npm:@angular/forms/bundles/forms.umd.js',
       '@angular/material': 'npm:@angular/material/bundles/material.umd.js',
 
-      //'@angular/cdk/rxjs': 'npm:@angular/cdk/bundles/cdk-rxjs.umd.js',
+      '@angular/cdk/rxjs': 'npm:@angular/cdk/bundles/cdk-rxjs.umd.js',
 
       '@angular/cdk': 'npm:@angular/cdk/bundles/cdk.umd.js',
       '@angular/cdk/platform': 'npm:@angular/cdk/bundles/cdk-platform.umd.js',
@@ -53,8 +53,11 @@
 
       // other libraries
       'rxjs': 'npm:rxjs',
+      'rxjs-compat': 'npm:rxjs-compat',
+ 
       'tslib': 'npm:tslib/tslib.js',
       'rxjs/operators': 'npm:rxjs/operators/',
+      'rxjs/operators/map': 'npm:rxjs/operators/map',
       'hammerjs': 'npm:hammerjs/hammer.js',
       
       'angular-in-memory-web-api': 'npm:angular-in-memory-web-api/bundles/in-memory-web-api.umd.js'

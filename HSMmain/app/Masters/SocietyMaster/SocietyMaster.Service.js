@@ -11,10 +11,16 @@ var __metadata = (this && this.__metadata) || function (k, v) {
 Object.defineProperty(exports, "__esModule", { value: true });
 var core_1 = require("@angular/core");
 var http_1 = require("@angular/http");
+var operators_1 = require("rxjs/operators");
 var SocietyMasterService = /** @class */ (function () {
     function SocietyMasterService(_http) {
         this._http = _http;
+        this.apipath = "http://localhost/";
+        this.oldPathMain = "http://localhost:21613";
     }
+    SocietyMasterService.prototype.GetTestData = function () {
+        return this._http.get(this.apipath + "Test/GetTest").pipe(operators_1.map(function (response) { return response.json(); }));
+    };
     SocietyMasterService = __decorate([
         core_1.Injectable(),
         __metadata("design:paramtypes", [http_1.Http])

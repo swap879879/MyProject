@@ -2,6 +2,7 @@ import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 import { BrowserAnimationsModule, NoopAnimationsModule } from '@angular/platform-browser/animations';
 import { Form, FormsModule } from '@angular/forms';
+import { HttpModule } from '@angular/http';
 import { MasterComponent } from "./Masters/Masters.Component"
 //import {
 //    MatAutocompleteModule, 
@@ -41,11 +42,12 @@ import { AppComponent } from './app.component';
 import { RouterModule } from '@angular/router'
 import { appRouting } from './app-routing.module'
 import { MasterModule } from './Masters/Masters.Module'
+import { Observable } from "rxjs/observable";
 import '../node_modules/hammerjs/hammer.js'
 
 
 @NgModule({
-    imports: [MasterModule, appRouting, BrowserModule, BrowserAnimationsModule, NoopAnimationsModule, FormsModule, 
+    imports: [MasterModule, appRouting, BrowserModule, BrowserAnimationsModule, NoopAnimationsModule, FormsModule, HttpModule,
     //imports: [MasterModule,appRouting,BrowserModule, BrowserAnimationsModule, NoopAnimationsModule, MatAutocompleteModule, FormsModule, 
     //    MatButtonModule,
     //    MatButtonToggleModule,

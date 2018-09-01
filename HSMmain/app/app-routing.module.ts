@@ -4,6 +4,7 @@ import { ModuleWithProviders } from "@angular/core/src/metadata/ng_module";
 import { AppComponent } from "./app.component";
 import { MasterComponent } from './Masters/Masters.Component'
 
+
 const AppRoutes: Routes = [    
     { path: 'Masters', component: MasterComponent }
 ];

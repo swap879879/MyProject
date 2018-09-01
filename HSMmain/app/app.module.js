@@ -10,6 +10,7 @@ var core_1 = require("@angular/core");
 var platform_browser_1 = require("@angular/platform-browser");
 var animations_1 = require("@angular/platform-browser/animations");
 var forms_1 = require("@angular/forms");
+var http_1 = require("@angular/http");
 var Masters_Component_1 = require("./Masters/Masters.Component");
 //import {
 //    MatAutocompleteModule, 
@@ -54,7 +55,7 @@ var AppModule = /** @class */ (function () {
     }
     AppModule = __decorate([
         core_1.NgModule({
-            imports: [Masters_Module_1.MasterModule, app_routing_module_1.appRouting, platform_browser_1.BrowserModule, animations_1.BrowserAnimationsModule, animations_1.NoopAnimationsModule, forms_1.FormsModule,
+            imports: [Masters_Module_1.MasterModule, app_routing_module_1.appRouting, platform_browser_1.BrowserModule, animations_1.BrowserAnimationsModule, animations_1.NoopAnimationsModule, forms_1.FormsModule, http_1.HttpModule,
             ],
             declarations: [app_component_1.AppComponent, Masters_Component_1.MasterComponent],
             exports: [Masters_Component_1.MasterComponent],
