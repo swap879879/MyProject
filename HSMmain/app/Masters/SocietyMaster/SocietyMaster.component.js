@@ -11,18 +11,21 @@ var __metadata = (this && this.__metadata) || function (k, v) {
 Object.defineProperty(exports, "__esModule", { value: true });
 var core_1 = require("@angular/core");
 var SocietyMaster_Service_1 = require("./SocietyMaster.Service");
+var SocietyMaster_Model_1 = require("./SocietyMaster.Model");
 var SocietyMasterComponent = /** @class */ (function () {
     function SocietyMasterComponent(SocietyMasterService) {
         this.SocietyMasterService = SocietyMasterService;
         this.Variable = "This";
+        this.SocietyMasterProperty = new SocietyMaster_Model_1.SocietyMasterModel();
     }
     SocietyMasterComponent.prototype.ngOnInit = function () {
+    };
+    SocietyMasterComponent.prototype.Test = function () {
         var _this = this;
         this.SocietyMasterService.GetTestData().subscribe(function (result) {
             console.log(result);
             if (result != undefined) {
                 _this.Variable = result;
-                alert(_this.Variable);
             }
         });
         console.log(this.Variable);

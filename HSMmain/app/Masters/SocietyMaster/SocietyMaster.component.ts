@@ -1,5 +1,7 @@
 ﻿import { Component,OnInit } from "@angular/core";
 import { SocietyMasterService } from "./SocietyMaster.Service";
+import { SocietyMasterModel } from "./SocietyMaster.Model";
+
 
 @Component({
     providers: [SocietyMasterService],
@@ -10,14 +12,19 @@ import { SocietyMasterService } from "./SocietyMaster.Service";
 export class SocietyMasterComponent implements OnInit{
 
     Variable: string = "This";
+    public SocietyMasterProperty: SocietyMasterModel = new SocietyMasterModel();
+
     constructor(private SocietyMasterService: SocietyMasterService) { }
 
     ngOnInit() {
+       
+    }
+    Test() {
         this.SocietyMasterService.GetTestData().subscribe((result) => {
             console.log(result);
             if (result != undefined) {
                 this.Variable = result;
-                alert(this.Variable);
+            
             }
         });
         console.log(this.Variable);
